@@ -55,6 +55,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Input\" />
+    <Folder Include="Interop\" />
     <Folder Include="Media\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
