@@ -11,8 +11,8 @@ namespace Avalonia.Gtk
     using System.IO;
     using Avalonia.Gtk.Input;
     using Avalonia.Gtk.Interop;
-    using Avalonia.Gtk.Media;
-    using Avalonia.Gtk.Media.Imaging;
+    //using Avalonia.Gtk.Media;
+    //using Avalonia.Gtk.Media.Imaging;
     using Avalonia.Input;
     using Avalonia.Media;
     using Avalonia.Media.Imaging;

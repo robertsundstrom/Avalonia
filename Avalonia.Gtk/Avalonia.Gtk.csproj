@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -41,10 +42,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GtkPlatformInterface.cs" />
+    <Compile Include="Input\GDK_KEY.cs" />
     <Compile Include="Input\GdkKeyboardDevice.cs" />
     <Compile Include="Input\GdkMouseDevice.cs" />
     <Compile Include="Input\KeyInterop.cs" />
+    <Compile Include="Interop\GdkModifierType.cs" />
+    <Compile Include="Interop\Libraries.cs" />
+    <Compile Include="Interop\StringHelpers.cs" />
     <Compile Include="Interop\UnmanagedMethods.cs" />
+    <Compile Include="Media\CairoDrawingContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Window.cs" />
   </ItemGroup>
@@ -54,11 +60,7 @@
       <Name>Avalonia</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Input\" />
-    <Folder Include="Interop\" />
-    <Folder Include="Media\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
